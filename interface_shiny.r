@@ -39,17 +39,17 @@ server <- function(input, output) {
   # Update reactive values based on difficulty level selection
   observeEvent(input$select_difficulty, {
     if (input$select_difficulty == 1) {
-      nrow$val <- 10
-      ncol$val <- 10
-      nmine$val <- 10
+      nrow$val <- 15
+      ncol$val <- 15
+      nmine$val <- 30
     } else if (input$select_difficulty == 2) {
       nrow$val <- 20
       ncol$val <- 20
-      nmine$val <- 40
+      nmine$val <- 100
     } else {
-      nrow$val <- 40
-      ncol$val <- 40
-      nmine$val <- 80
+      nrow$val <- 26
+      ncol$val <- 25
+      nmine$val <- 250
     }
     removeModal()
   })
