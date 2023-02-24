@@ -1,4 +1,3 @@
 # Demineur
 
-test
-test inverse
+
