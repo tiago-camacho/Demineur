@@ -25,9 +25,3 @@ Si clic sur un chiffre de 1 à 8 ca ne dévouvre que le chiffre
 Si toutes les cases chiffres sont découvertes et que le chrono est différent de 0 alors affiche message de victoire chrono + stop. 
 
 Rédaction readme et licence 
-
-
-
-
-=======
->>>>>>> 9ae587b8d8712a92118daba8f95a46591f3b6adc
