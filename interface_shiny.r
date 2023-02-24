@@ -67,7 +67,7 @@ server <- function(input, output) {
       }
     }
     matrix
-  })
+  }, colnames = FALSE)
 }
 
 # Run the application
