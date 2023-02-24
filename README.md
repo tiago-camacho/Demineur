@@ -1,7 +1,2 @@
 # Demineur
 
-lelelele
-
-kfkfkf
-
-lulululu
