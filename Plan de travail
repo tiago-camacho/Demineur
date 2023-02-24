@@ -1,0 +1,30 @@
+Etapes : 
+
+Algo de base créer une matrice de chiffre aléatoire contenant des mines et leur indication en chiffre TIAGO
+
+Gérer les niveaux:
+-implémenter un nombre de mine et la taille suivant le niveau TIAGO
+
+
+Partie fluid page : ALLYSON
+couleur de fond 
+titre joli
+chrono 
+nombre de drapeau restants
+mettre une sous fenêtre pour le choix de niveau facile moyen difficile ou personnalisé (curseur ou chiffres à rentrer pour le nombre de mines et un autre pour le nombre de cases)
+
+Partie serveur effet des clics : 
+appeler la fonction grille aléatoire suivant le niveau choisis
+clic droite sur une case grise : pose un drapeau et bloque la case
+clic gauche : découvre la case 
+Si la clic découvre une mine(+chiffre négatif) chrono = stop 
+affiche message de défaite
+si la personne clic sur une case=0 ca découvre tous les 0 collés à ce 0
+Si clic sur un chiffre de 1 à 8 ca ne dévouvre que le chiffre 
+
+Si toutes les cases chiffres sont découvertes et que le chrono est différent de 0 alors affiche message de victoire chrono + stop. 
+
+
+Rédaction readme et licence 
+
+
