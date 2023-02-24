@@ -66,9 +66,9 @@ server <- function(input, output) {
         }
       }
     }
+    colnames(matrix) <- NULL
     matrix
   })
 }
-
 # Run the application
 shinyApp(ui = ui, server = server)
