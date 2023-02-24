@@ -40,5 +40,5 @@ generate_grid <- function(matrix) {
 # Generate the final grid with mine counts
 final_grid <- generate_grid(matrix)
 
-# Affichage de controle de la grille
+# Affichage de contrôle de la grille
 print(final_grid)
