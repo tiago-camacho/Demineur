@@ -68,11 +68,38 @@ server <- function(input, output) {
     }
     matrix
   }, colnames = FALSE)
-
- # Make a slider bar 
-             sliderInput("slider1", label = h3("Slider"), min = 0, 
-                         max = 100, value = 50)
-
+  
 }
+# Define function to reveal cells and handle game logic
+reveal_cell <- function(matrix, i, j) {
+  
+  # If the cell is already revealed or flagged, do nothing
+  if (matrix[i, j] >= 0) {
+    return(matrix)
+  }
+  
+  # If the cell is a mine, reveal all mines and return -1
+  if (matrix[i, j] == -1) {
+    matrix[matrix == -1] <- 9
+    return(matrix)
+  }
+  
+  # Otherwise, reveal the cell
+  matrix[i, j] <- abs(matrix[i, j])
+  
+  # If the revealed cell is a zero, reveal all adjacent cells recursively
+  if (matrix[i, j] == 0) {
+    for (ni in max(1, i - 1):min(nrow(matrix), i + 1)) {
+      for (nj in max(1, j - 1):min(ncol(matrix), j + 1)) {
+        if (matrix[ni, nj] < 0) {
+          matrix <- reveal_cell(matrix, ni, nj)
+        }
+      }
+    }
+  }
+  
+  return(matrix)
+}
+
 # Run the application
 shinyApp(ui = ui, server = server)
