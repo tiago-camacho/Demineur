@@ -66,7 +66,6 @@ server <- function(input, output) {
         }
       }
     }
-    colnames(matrix) <- NULL
     matrix
   }, colnames = FALSE)
 
