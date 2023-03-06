@@ -1,9 +1,9 @@
 Etapes : 
 
-Algo de base créer une matrice de chiffre aléatoire contenant des mines et leur indication en chiffre TIAGO
+Algo de base créer une matrice de chiffre aléatoire contenant des mines et leur indication en chiffre TIAGO ok
 
 Gérer les niveaux:
--implémenter un nombre de mine et la taille suivant le niveau TIAGO
+-implémenter un nombre de mine et la taille suivant le niveau TIAGO ok
 
 
 Partie fluid page : ALLYSON
@@ -14,7 +14,7 @@ nombre de drapeau restants
 mettre une sous fenêtre pour le choix de niveau facile moyen difficile ou personnalisé (curseur ou chiffres à rentrer pour le nombre de mines et un autre pour le nombre de cases)
 
 Partie serveur effet des clics : TIAGO et ALLYSON
-appeler la fonction grille aléatoire suivant le niveau choisis
+appeler la fonction grille aléatoire suivant le niveau choisis ok
 clic droite sur une case grise : pose un drapeau et bloque la case
 clic gauche : découvre la case 
 Si la clic découvre une mine(+chiffre négatif) chrono = stop 
