@@ -69,6 +69,11 @@ server <- function(input, output) {
     colnames(matrix) <- NULL
     matrix
   }, colnames = FALSE)
+
+ # Make a slider bar 
+             sliderInput("slider1", label = h3("Slider"), min = 0, 
+                         max = 100, value = 50)
+
 }
 # Run the application
 shinyApp(ui = ui, server = server)
